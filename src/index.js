@@ -1,15 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import DefaultErrorBoundary from './DefaultErrorBoundary'
-
+import { ErrorBoundary } from 'react-error-boundary'
+import ErrorComponent from './ErrorComponent'
 import './styles.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <DefaultErrorBoundary>
+    <ErrorBoundary FallbackComponent={ErrorComponent}>
       <App />
-    </DefaultErrorBoundary>
+    </ErrorBoundary>
   </React.StrictMode>,
   document.getElementById('app')
 )
