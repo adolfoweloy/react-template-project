@@ -13,3 +13,12 @@ bash -s <project-name>
 
 The result will be a directory with the given `project-name` with the `package.json`'s `name` attribute set to the `project-name` as well.
 This script will also initialise a new Git repository.
+
+## Using Flow
+
+If you want to create the project with Flow support, run the following command:
+
+```
+curl -sSL https://raw.githubusercontent.com/adolfoweloy/react-template-project/with-flow/install.sh | \
+bash -s <project-name>
+```
