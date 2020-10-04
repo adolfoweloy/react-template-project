@@ -11,6 +11,7 @@ git clone ${REPO} ${PROJECT_NAME}
 
 ## changes package name
 cd ${PROJECT_NAME}
+git checkout with-flow
 cat package.json | sed s/react\-experiments/${PROJECT_NAME}/g > ${CURRENT_DIR}/${PROJECT_NAME}/newpackage.json
 mv "${CURRENT_DIR}/${PROJECT_NAME}/newpackage.json" "${CURRENT_DIR}/${PROJECT_NAME}/package.json"
 
