@@ -8,7 +8,9 @@
     "dev:hot": "npm run dev -- --hot",
     "test": "jest",
     "format": "pretty-quick",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "flow": "flow",
+    "postinstall": "flow-typed install"
   },
   "husky": {
     "hooks": {
@@ -23,6 +25,7 @@
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.10.2",
+    "@babel/preset-flow": "^7.10.4",
     "@babel/preset-react": "^7.10.1",
     "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^10.2.1",
@@ -32,6 +35,8 @@
     "eslint": "^7.2.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
+    "flow-bin": "^0.135.0",
+    "flow-typed": "^3.2.1",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
