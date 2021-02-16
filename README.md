@@ -22,3 +22,8 @@ If you want to create the project with Flow support, run the following command:
 curl -sSL https://raw.githubusercontent.com/adolfoweloy/react-template-project/with-flow/install.sh | \
 bash -s <project-name>
 ```
+## References used to add support to Flow
+
+* [How to setup Flow with create-react-app and Visual Studio Code](http://stephenmann.io/post/how-to-setup-flow-with-create-react-app-and-visual-studio-code/)
+
+
